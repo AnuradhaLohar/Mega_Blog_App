@@ -13,6 +13,8 @@ function Post() {
     const navigate = useNavigate()
 
     const userData = useSelector((state) => state.auth.userData)
+    const authStatus = useSelector(state => state.auth.status)
+
     const isAuthor = post && userData ? post.userId === userData.$id : false
     console.log(post);
     console.log(userData);
@@ -22,14 +24,18 @@ function Post() {
 
 
     useEffect(() => {
-
+        if (!authStatus) {
+            setPost(null)
+            navigate('/')
+            return
+        }
         if (slug) {
             appwriteService.getPost(slug).then((post) => {
                 if (post) setPost(post)
                 else navigate('/')
             })
         } else navigate("/")
-    }, [navigate, slug]);
+    }, [navigate, slug , authStatus]);
 
     const deletePost = () => {
         appwriteService.deletePost(post.$id).then((status) => {

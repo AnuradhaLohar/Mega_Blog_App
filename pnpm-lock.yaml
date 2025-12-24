@@ -18,8 +18,8 @@ importers:
         specifier: ^6.3.0
         version: 6.3.0(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
       appwrite:
-        specifier: ^20.0.0
-        version: 20.0.0
+        specifier: ^21.5.0
+        version: 21.5.0
       html-react-parser:
         specifier: ^5.2.6
         version: 5.2.6(@types/react@19.1.13)(react@19.1.1)
@@ -667,8 +667,8 @@ packages:
     resolution: {integrity: sha512-zbB9rCJAT1rbjiVDb2hqKFHNYLxgtk8NURxZ3IZwD3F6NtxbXZQCnnSi1Lkx+IDohdPlFp222wVALIheZJQSEg==}
     engines: {node: '>=8'}
 
-  appwrite@20.0.0:
-    resolution: {integrity: sha512-1uUWLCHT2ByJORz5+NORNk74HW02csg8Jm6lUKUog2DU9WnepqzbLnlD7BC22+XVo5tFp29dreinJk/doVTeTw==}
+  appwrite@21.5.0:
+    resolution: {integrity: sha512-643bMRZVYXMluXvSXbdaLAi9qqTJLWbVGguKH4vH6IdKHur6gGIirhCOqAEt33pV4TOFJ55VBu8c/+Ft1ke2SA==}
 
   argparse@2.0.1:
     resolution: {integrity: sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==}
@@ -1833,7 +1833,7 @@ snapshots:
     dependencies:
       color-convert: 2.0.1
 
-  appwrite@20.0.0: {}
+  appwrite@21.5.0: {}
 
   argparse@2.0.1: {}
 
